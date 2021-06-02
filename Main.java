@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.Scanner;
+
 /**
  * Write a description of class Main here.
  *
@@ -9,10 +11,24 @@ public class Main
 {
     public static void main(String args[]){
         
-        //ArrayList<Integer> arri = new ArrayList<Integer>();
-        //ArrayList<String> arrs = new ArrayList<String>();
+        ArrayList<Integer> arri = new ArrayList<Integer>();
+        ArrayList<String> arrs = new ArrayList<String>();
+        ArrayListCustom<Integer> arrc = new ArrayListCustom<Integer>(false);
         ArrayList<Mahasiswa> arrm = new ArrayList<Mahasiswa>();
         
+        arri.add(4);
+        arri.add(5);
+        arri.add(1);
+        arri.add(2);
+   
+        
+        arrs.add("Doni");
+        arrs.add("Ayu");
+        arrs.add("Bayu");
+        arrs.add("Fikri");
+        
+    
+/**/
         System.out.println("Data Mahasiswa");
         System.out.print("Jumlah Mahasiswa: ");
         Scanner input = new Scanner(System.in);
@@ -111,7 +127,7 @@ public class Main
         
         //Menghapus data Mahasiswa
         System.out.println("\nMenghapus Data Mahasiswa");
-        System.out.print("NIM Yang Ingin DiHapus: ");
+        System.out.print("Masukkan NIM yang ingin Dihapus: ");
         cariNim = input.nextInt();
         for (Mahasiswa mhs : arrm)
         {
@@ -133,7 +149,7 @@ public class Main
             System.out.println("Umur : "+mhs.getumurMhs());
             System.out.println("-----------------------------");
         }
-        /*
+        /**/
         System.out.println("Menampilkan Data Mahasiswa");
         for (Mahasiswa mhs: arrm)
         {
@@ -145,10 +161,10 @@ public class Main
             }
             System.out.println(mhs.getnimMhs()+" - "+ mhs.getnamaMhs());
         }
-        */
+       /* */
        
        //-----------------------------
-       /*
+       
         System.out.println("----------------------------------------------------");
         System.out.println("----------------------------------------------------");
         System.out.println("Menampilkan Nilai Array List dengan for biasa");
@@ -176,9 +192,7 @@ public class Main
         for (String valx: arrs){
             System.out.println(valx);
         }
-      
-          */
-        
+            
         /*
         arri.add(1);
         arri.add(2);

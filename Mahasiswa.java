@@ -23,6 +23,9 @@ public class Mahasiswa
         this.alamat = alamat;
         this.kelas = kelas;
     }
+    
+     public boolean allowDuplicates;
+  //  public ArrayListCustom<E>;
 
     /**
      * An example of a method - replace this comment with your own
