@@ -81,7 +81,7 @@ public class Main
         
         //Menampilkan Hasil Input Dengan di Sorting
         Collections.sort(arrm,new MahasiswaComparatorString());
-        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan String(Alamat)");
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan String(Kelas)");
         for (Mahasiswa mhs: arrm)
         {
             System.out.println("Nim : "+mhs.getnimMhs());
