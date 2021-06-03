@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * Write a description of class Main here.
@@ -15,11 +16,19 @@ public class Main
         ArrayList<String> arrs = new ArrayList<String>();
         ArrayListCustom<Integer> arrc = new ArrayListCustom<Integer>(false);
         ArrayList<Mahasiswa> arrm = new ArrayList<Mahasiswa>();
+
+        //ArrayListCostum 
+        arrc.add(1);
+        arrc.add(1);
+        arrc.add(5);
+        arrc.add(4);
         
+        
+        /*
         arri.add(4);
         arri.add(5);
         arri.add(1);
-        arri.add(2);
+        arri.add(1);
    
         
         arrs.add("Doni");
@@ -27,8 +36,9 @@ public class Main
         arrs.add("Bayu");
         arrs.add("Fikri");
         
+        
     
-/**/
+        
         System.out.println("Data Mahasiswa");
         System.out.print("Jumlah Mahasiswa: ");
         Scanner input = new Scanner(System.in);
@@ -67,6 +77,34 @@ public class Main
             System.out.println("---------------------");
         }
         
+        //Menampilkan Hasil Input Dengan di Sorting
+        Collections.sort(arrm,new MahasiswaComparatorString());
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan String(Alamat)");
+        for (Mahasiswa mhs: arrm)
+        {
+            System.out.println("Nim : "+mhs.getnimMhs());
+            System.out.println("Nama : "+mhs.getnamaMhs());
+            System.out.println("Alamat : "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
+        
+        
+        //Menampilkan Hasil Input Dengan di Sorting
+        Collections.sort(arrm,new MahasiswaComparator());
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan Integer(Umur)");
+        for (Mahasiswa mhs: arrm)
+        {
+            System.out.println("Nim : "+mhs.getnimMhs());
+            System.out.println("Nama : "+mhs.getnamaMhs());
+            System.out.println("Alamat : "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
+        
+        
         //Mencari data Mahasiswa
         System.out.println("\nSearch Data Mahasiswa");
         int cariNim;
@@ -83,6 +121,8 @@ public class Main
                 System.out.println("Umur : "+mhs.getumurMhs());
             }
         }
+        
+        
         
         //Mengupdate data Mahasiswa
         System.out.println("\nUpdate Data Mahasiswa");
@@ -149,7 +189,7 @@ public class Main
             System.out.println("Umur : "+mhs.getumurMhs());
             System.out.println("-----------------------------");
         }
-        /**/
+    
         System.out.println("Menampilkan Data Mahasiswa");
         for (Mahasiswa mhs: arrm)
         {
@@ -160,11 +200,21 @@ public class Main
                 break;
             }
             System.out.println(mhs.getnimMhs()+" - "+ mhs.getnamaMhs());
-        }
-       /* */
+        }    
+          
+          
        
        //-----------------------------
+        
        
+        System.out.println("");
+        Collections.sort(arrc);
+        System.out.println("Menampilkan Nilai Array List Custom");
+        for (int i=0; i < arrc.size(); i++){
+            System.out.println(arrc.get(i));
+        }
+        
+        
         System.out.println("----------------------------------------------------");
         System.out.println("----------------------------------------------------");
         System.out.println("Menampilkan Nilai Array List dengan for biasa");
@@ -193,20 +243,7 @@ public class Main
             System.out.println(valx);
         }
             
-        /*
-        arri.add(1);
-        arri.add(2);
-        arri.add(5);
-        arri.add(4);
-        
-        arrs.add("Doni");
-        arrs.add("Ayu");
-        arrs.add("Bayu");
-        arrs.add("Syauli");
-        
-        //arrm.add(new Mahasiswa(1001,"Doni"));
-        
-        */
+       */
     }
     
 }

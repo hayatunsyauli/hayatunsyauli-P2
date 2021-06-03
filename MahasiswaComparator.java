@@ -3,7 +3,7 @@ import java.util.Comparator;
 /**
  * Write a description of class MahasiswaComparator here.
  *
- * @author (your name)
+ * @author (Hayatun Syauli)
  * @version (a version number or a date)
  */
 public class MahasiswaComparator implements Comparator<Mahasiswa>
@@ -29,6 +29,7 @@ public class MahasiswaComparator implements Comparator<Mahasiswa>
     public int compare(Mahasiswa mhs1, Mahasiswa mhs2)
     {
         // put your code here
-        return mhs1.getnimMhs() - mhs2.getnimMhs();
+        //return mhs1.getnimMhs() - mhs2.getnimMhs();
+        return mhs1.getumurMhs() - mhs2.getumurMhs();
     }
 }

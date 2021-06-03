@@ -20,7 +20,7 @@ public class ArrayListCustom<E> extends ArrayList<E>
     public boolean add(E e){
         if(this.allowDuplicates == false && mySet.add(e) == false)
 {
-            throw new IllegalArgumentException("NIM sudah ada");
+            throw new IllegalArgumentException("NIM Sudah Ada!!");
         }else if(this.allowDuplicates == true && mySet.add(e) == false)
         {
             super.add(e);
