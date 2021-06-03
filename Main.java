@@ -16,7 +16,9 @@ public class Main
         ArrayList<String> arrs = new ArrayList<String>();
         ArrayListCustom<Integer> arrc = new ArrayListCustom<Integer>(false);
         ArrayList<Mahasiswa> arrm = new ArrayList<Mahasiswa>();
-
+    
+        
+        /*
         //ArrayListCostum 
         arrc.add(1);
         arrc.add(1);
@@ -24,7 +26,7 @@ public class Main
         arrc.add(4);
         
         
-    /*
+    
         arri.add(4);
         arri.add(5);
         arri.add(1);
@@ -37,7 +39,7 @@ public class Main
         arrs.add("Fikri");
         
         
-    
+        */
         
         System.out.println("Data Mahasiswa");
         System.out.print("Jumlah Mahasiswa: ");
@@ -203,6 +205,7 @@ public class Main
         }    
           
           
+        /*
        
        //-----------------------------
         
