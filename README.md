@@ -16,3 +16,7 @@
 <h3>ARRAYLISTCUSTOM</h3>
 
 [![N|Solid](https://github.com/hayatunsyauli/hayatunsyauli-p2/blob/master/ss10.png)](https://github.com/lessydien/hayatunsyauli/hayatunsyauli-p2/blob/master/ss10.png)
+
+<h3>KALKULATOR JAVAFX</h3>
+
+[![N|Solid](https://github.com/hayatunsyauli/hayatunsyauli-P2/blob/master/Hasil.gif)](https://github.com/hayatunsyauli/hayatunsyauli-P2/blob/master/Hasil.gif)
