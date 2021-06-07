@@ -77,6 +77,7 @@ public class Calculator extends Application
         //pane.add(hasilLabel1, 4, 2);
         // JavaFX must have a Scene (window content) inside a Stage (window)
         Scene scene = new Scene(pane, 400,200);
+        scene.getStylesheets().add("style.css");
         stage.setTitle("Kalkulator Sederhana");
         stage.setScene(scene);
 
